@@ -1,0 +1,13 @@
+/* import base */
+@import "./base/cssReset.scss";
+@import "./base/global.scss";
+
+/* import utilities */
+@import "./util/helpers.scss";
+
+/* import Layout */
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+/* import pages */
+@import "./pages/index.scss";
