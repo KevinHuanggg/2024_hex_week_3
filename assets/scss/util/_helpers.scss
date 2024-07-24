@@ -1,7 +1,40 @@
+/* 字體大小樣式 */
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/* 通用樣式 */
+
 .container {
+  max-width: 1296px;
   margin: 0 auto;
 }
 
 .d-flex {
   display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }

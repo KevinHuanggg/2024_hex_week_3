@@ -3,6 +3,7 @@
 @import "./base/global.scss";
 
 /* import utilities */
+@import "./util/_variables.scss";
 @import "./util/helpers.scss";
 
 /* import Layout */
@@ -11,3 +12,4 @@
 
 /* import pages */
 @import "./pages/index.scss";
+@import "./pages/q&a.scss";
