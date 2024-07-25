@@ -1,40 +1,74 @@
 footer {
-  padding: 48px 0 32px;
+  padding: 48px 12px 32px;
   background-color: $red;
   color: $light;
 
-  nav {
-    margin-bottom: 24px;
+  a {
+    color: $light;
   }
 
-  .footer-nav {
+  .footer-container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $light;
+  }
+
+  .Contact-box {
+    ul {
+      display: flex;
+    }
+
     li {
       margin-right: 48px;
-
-      a {
-        color: $light;
-      }
+      margin-bottom: 36px;
+      height: 48px;
+      display: flex;
+      align-items: center;
     }
   }
 
-  .social-link li {
+  .contact-info {
+    a {
+      display: flex;
+      font-size: 36px;
+    }
+    .bi-telephone {
+      margin-right: 22px;
+      margin-bottom: 8px;
+    }
+
+    .bi-envelope {
+      margin-right: 20px;
+    }
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    li {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
     a {
       display: block;
       width: 48px;
-    }
-    &:not(:last-child) {
-      margin-right: 32px;
     }
   }
 
   .contact {
     padding: 32px 0;
-    border-bottom: 1px solid $light;
-    margin-bottom: 32px;
 
     a {
       color: $light;
-      font-size: 2.25rem;
+      font-size: 36px;
 
       .bi-telephone {
         margin-right: 22px;
@@ -48,9 +82,12 @@ footer {
   }
 
   .policy {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+
     li {
       a {
-        color: $light;
         font-size: 14px;
       }
 

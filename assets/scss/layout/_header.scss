@@ -1,5 +1,6 @@
 header {
   background-color: $red;
+  font-size: 20px;
 
   .header-container {
     max-width: 1320px;
@@ -31,17 +32,20 @@ header {
 
   ul {
     display: flex;
-    gap: 64px;
 
     @media (max-width: 767px) {
       width: 100%;
-      gap: 0;
       flex-wrap: wrap;
     }
   }
 
   a {
     color: $light;
+    padding: 25px 32px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
   }
 
   @media (max-width: 767px) {
