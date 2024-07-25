@@ -19,8 +19,47 @@
 /* 通用樣式 */
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    /* 696+24(12+12padding) */
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    /*348+24 */
+    max-width: 372;
+  }
+}
+
+.container-md-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .container-md-fluid {
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-md-fluid {
+    padding: 0;
+  }
+}
+
+.container-sm-full {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .d-flex {
