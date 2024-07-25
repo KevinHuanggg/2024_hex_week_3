@@ -1,5 +1,5 @@
 header {
-  background-color: #aa0601;
+  background-color: $red;
 
   .header-container {
     max-width: 1320px;
@@ -41,7 +41,7 @@ header {
   }
 
   a {
-    color: white;
+    color: $light;
   }
 
   @media (max-width: 767px) {
@@ -52,7 +52,7 @@ header {
     li {
       padding: 12px 0;
       width: 50%;
-      border: 1px solid white;
+      border: 1px solid $light;
       display: flex;
       justify-content: center;
       align-items: center;

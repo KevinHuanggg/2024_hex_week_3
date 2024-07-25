@@ -1,6 +1,9 @@
 .qa {
   padding: 96px 0 80px;
   max-width: 856px;
+  @media (max-width: 767px) {
+    padding: 40px 0 64px;
+  }
 
   h2,
   h3,
@@ -12,6 +15,9 @@
     border-left: 16px solid #9f1213;
     padding-left: 16px;
     margin-bottom: 32px;
+    @media (max-width: 767px) {
+      margin-bottom: 24px;
+    }
   }
 
   h3 {
@@ -26,5 +32,8 @@
 
   li {
     margin-bottom: 32px;
+    @media (max-width: 767px) {
+      margin-bottom: 24px;
+    }
   }
 }
