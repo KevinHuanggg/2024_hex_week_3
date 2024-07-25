@@ -33,18 +33,24 @@ header {
   ul {
     display: flex;
 
+    a {
+      color: $light;
+      padding: 24px;
+      margin-left: 40px;
+
+      @media (max-width: 767px) {
+        padding: 0;
+        margin-left: 0;
+      }
+    }
+
+    .last-child {
+      padding-right: 0;
+    }
+
     @media (max-width: 767px) {
       width: 100%;
       flex-wrap: wrap;
-    }
-  }
-
-  a {
-    color: $light;
-    padding: 25px 32px;
-
-    @media (max-width: 767px) {
-      padding: 0;
     }
   }
 
