@@ -3,6 +3,10 @@ footer {
   background-color: $red;
   color: $light;
 
+  @media (max-width: 767px) {
+    padding: 24px 12px 24px;
+  }
+
   a {
     color: $light;
   }
@@ -18,11 +22,19 @@ footer {
     align-items: flex-start;
     padding-bottom: 32px;
     border-bottom: 1px solid $light;
+
+    @media (max-width: 767px) {
+      padding-bottom: 24px;
+    }
   }
 
   .Contact-box {
     ul {
       display: flex;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
 
     li {
@@ -31,6 +43,10 @@ footer {
       height: 48px;
       display: flex;
       align-items: center;
+
+      @media (max-width: 992px) {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -38,14 +54,26 @@ footer {
     a {
       display: flex;
       font-size: 36px;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
     }
     .bi-telephone {
       margin-right: 22px;
       margin-bottom: 8px;
+
+      @media (max-width: 767px) {
+        margin-right: 11px;
+      }
     }
 
     .bi-envelope {
       margin-right: 20px;
+
+      @media (max-width: 767px) {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -55,11 +83,27 @@ footer {
     li {
       &:not(:last-child) {
         margin-right: 32px;
+
+        @media (max-width: 992px) {
+          margin-right: 16px;
+        }
+
+        @media (max-width: 767px) {
+          margin-right: 8px;
+        }
       }
     }
     a {
       display: block;
       width: 48px;
+
+      @media (max-width: 992px) {
+        width: 40px;
+      }
+
+      @media (max-width: 767px) {
+        width: 24px;
+      }
     }
   }
 
@@ -84,15 +128,39 @@ footer {
   .policy {
     display: flex;
     justify-content: space-between;
-    padding: 32px 0;
+    padding-top: 16px;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    p {
+      @media (max-width: 767px) {
+        margin-bottom: 8px;
+      }
+    }
+
+    ul {
+      display: flex;
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
 
     li {
       a {
         font-size: 14px;
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
       }
 
       &:not(:last-child) {
         margin-right: 48px;
+      }
+
+      @media (max-width: 767px) {
+        margin-bottom: 8px;
       }
     }
   }
